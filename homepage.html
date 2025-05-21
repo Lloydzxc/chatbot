@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header section (Dashboard) -->
+<header>
+  <div class="dashboard">
+    <nav>
+      
+      <ul class="nav-left">
+        <li><a href="/homepage">Homepage</a></li>
+        <li><a href="/chat">Inquiry</a></li> <!-- protected route -->
+      </ul>
+
+      
+      <ul class="nav-right">
+        <!-- Login link (only if not logged in) -->
+        <li id="login-link"><a href="login.html">Login</a></li>
+
+        <!-- Profile with dropdown (only shown when logged in) -->
+        <li class="profile-link" id="profile-tab" style="display: none;">
+          <span class="profile-label">Profile</span>
+          <div class="dropdown-menu">
+            <a href="javascript:void(0);" onclick="logout()">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Content of the homepage -->
+<div class="homepage-container">
+  <div class="content-flex">
+    <img 
+      src="https://images.squarespace-cdn.com/content/v1/5ccae2c1a568279c31ae95c0/1594699487350-I7XXQZLKDG9MMHFVYUSV/FBCAI+LOGO-min.PNG?format=2500w" 
+      alt="Church Welcome" 
+      class="home-image"
+    />
+    
+    <div class="home-text">
+      <h1>Welcome to the Free Believers in Christ Fellowship International!</h1>
+      <p>is a Full Gospel, Holy Spirit-filled, Bible-based Christian church founded in 1981 with its Philippine headquarters in Baguio City.</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer section -->
+  <footer>
+    <div class="footer-content">
+      <p>Contact Us: <a href="https://mail.google.com/">fbcacademyinc@gmail.com</a></p>
+      <p>Follow us on:</p>
+      <div class="social-media-links">
+        <!-- Social Media Icons -->
+        <a href="https://www.facebook.com/marcusjerome.eugenio.1" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+          <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+        </a>
+        <a href="https://www.instagram.com/akosi_gelowww/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+        </a>
+      </div>
+      <p>&copy; 2010 Church. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript code -->
+  <script>
+    // Check if the user is logged in using localStorage
+    window.onload = function() {
+      const userLoggedIn = localStorage.getItem('userLoggedIn');
+      
+      // If the user is logged in, hide the Login link and show the Profile link
+      if (userLoggedIn === 'true') {
+        document.getElementById('login-link').style.display = 'none'; // Hide Login link
+        document.getElementById('profile-tab').style.display = 'block'; // Show Profile dropdown
+      } else {
+        document.getElementById('login-link').style.display = 'block'; // Show Login link
+        document.getElementById('profile-tab').style.display = 'none'; // Hide Profile dropdown
+      }
+
+    }
+
+    // Logout function to clear the login status
+    function logout() {
+      // Clear the 'userLoggedIn' flag from localStorage
+      localStorage.removeItem('userLoggedIn');
+      
+      // Redirect to the login page
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>

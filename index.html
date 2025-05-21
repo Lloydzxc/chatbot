@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header section (Dashboard) -->
+<header>
+  <div class="dashboard">
+    <nav>
+      <!-- Left aligned -->
+      <ul class="nav-left">
+        <li><a href="/homepage.html">Homepage</a></li>
+      </ul>
+
+      <!-- Right aligned -->
+      <ul class="nav-right">
+        <!-- Login link (only if not logged in) -->
+        <li id="login-link"><a href="login.html">Login</a></li>
+
+        <!-- Profile with dropdown (only shown when logged in) -->
+        <li class="profile-link" id="profile-tab" style="display: none;">
+          <span class="profile-label">Profile</span>
+          <div class="dropdown-menu">
+            <a href="javascript:void(0);" onclick="logout()">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <div class="chat-container">
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Ask a question..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  
+  
+<!-- Footer section -->
+<footer>
+  <div class="footer-content">
+    <p>Contact Us: <a href="https://mail.google.com/">fbcacademyinc@gmail.com</a></p>
+    <p>Follow us on:</p>
+    <div class="social-media-links">
+      <!-- Social Media Icons -->
+      <a href="https://www.facebook.com/marcusjerome.eugenio.1" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+      </a>
+      <a href="https://www.instagram.com/akosi_gelowww/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+      </a>
+    </div>
+    <p>&copy; 2025 Church. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

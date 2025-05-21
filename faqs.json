@@ -1,0 +1,64 @@
+[
+  {
+    "keywords": ["when", "what time", "time", "sunday", "service", "schedule", "start", "starts", "begin"],
+    "answer": "Sunday service starts at 10 AM."
+  },
+  {
+    "keywords": ["how", "where", "donate", "donation", "offering", "give", "giving", "tithe", "support", "contribute", "gcash", "paymaya", "help"],
+    "answer": "You can donate online or during the service. For online donation: GCash/PayMaya (09299605132)."
+  },
+  {
+    "keywords": ["location", "address", "where", "church", "located", "find", "place", "map", "building"],
+    "answer": "Our church is at 333, FBCFI Bldg., Purok 7, New Lucban Interior, Baguio City, 2600."
+  },
+  {
+    "keywords": ["prayer", "request", "pray", "intercede", "intercession", "need prayer", "prayers", "can you pray"],
+    "answer": "You can submit a prayer request here or on our website."
+  },
+  {
+    "keywords": ["when", "what time", "schedule", "youth", "service", "teen", "teens", "saturday", "young people", "youth group"],
+    "answer": "Youth services are held every Saturday at 4 PM."
+  },
+  {
+    "keywords": [
+      "baptism", "baptize", "baptized", "baptising", "christening",
+      "get baptized", "can i get baptized", "do you do baptisms", 
+      "schedule baptism", "water baptism", "baptismal", "baptism service"
+    ],
+    "answer": "📅 Redirect to booking::baptism"
+  },
+  {
+    "keywords": [
+      "wedding", "marriage", "married", "matrimony", "ceremony",
+      "can i get married", "tie the knot", "book wedding", 
+      "do you do weddings", "wedding service", "church wedding"
+    ],
+    "answer": "📅 Redirect to booking::wedding"
+  },
+  {
+    "keywords": [
+      "funeral", "memorial", "burial", "last rites", "death service",
+      "funeral service", "wake", "eulogy", "do you do funerals",
+      "can i book funeral", "service for the dead", "memorial ceremony"
+    ],
+    "answer": "📅 Redirect to booking::funeral"
+  },
+  {
+    "keywords": [
+      "baby dedication", "dedicate baby", "child blessing", "baby", 
+      "blessing ceremony", "dedication", "child dedication", 
+      "can i dedicate my baby", "schedule baby dedication", 
+      "do you offer dedications"
+    ],
+    "answer": "📅 Redirect to booking::baby dedication"
+  },
+  {
+    "keywords": [
+      "house blessing", "home blessing", "bless house", 
+      "blessing for house", "pastor bless house", "new house", 
+      "house dedication", "can you bless our house", "bless our home", 
+      "home visit", "anoint house"
+    ],
+    "answer": "📅 Redirect to booking::house blessing"
+  }
+]
