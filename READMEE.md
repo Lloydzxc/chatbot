@@ -124,14 +124,6 @@ A simple web-based chatbot application for a church organization, designed to su
 
 ---
 
-## ✅ To Do
-
-- [ ] Add admin panel to view/manage bookings
-- [ ] Add email notifications for booking confirmations
-- [ ] Expand chatbot NLP capabilities
-- [ ] Implement mobile-responsive improvements
-
----
 
 ## 📝 License
 This project is built for academic or ministry-related purposes. Please credit the original author when reusing or modifying.
